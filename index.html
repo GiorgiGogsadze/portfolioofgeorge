@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./logo/site.webmanifest" />
+    <link rel="mask-icon" href="./logo/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./logo/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="msapplication-config" content="./logo/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="jquery.js" defer></script>
+    <script src="jquery.waypoints.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <!-- desktop nav -->
+      <nav class="header__nav">
+        <a href="#about-me" class="header__link header__link-1">
+          <svg viewBox="0 0 640 512" class="header__link-svg-1">
+            <path
+              d="M630.6 364.9l-90.3-90.2c-12-12-28.3-18.7-45.3-18.7h-79.3c-17.7 0-32 14.3-32 32v79.2c0 17 6.7 33.2 18.7 45.2l90.3 90.2c12.5 12.5 32.8 12.5 45.3 0l92.5-92.5c12.6-12.5 12.6-32.7.1-45.2zm-182.8-21c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24c0 13.2-10.7 24-24 24zm-223.8-88c70.7 0 128-57.3 128-128C352 57.3 294.7 0 224 0S96 57.3 96 128c0 70.6 57.3 127.9 128 127.9zm127.8 111.2V294c-12.2-3.6-24.9-6.2-38.2-6.2h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 287.9 0 348.1 0 422.3v41.6c0 26.5 21.5 48 48 48h352c15.5 0 29.1-7.5 37.9-18.9l-58-58c-18.1-18.1-28.1-42.2-28.1-67.9z"
+            ></path>
+          </svg>
+          <span>About me</span></a
+        >
+        <a href="#services" class="header__link">
+          <div class="hand-svg">
+            <img
+              src="./img/svg/handshake-regular.svg"
+              alt="hanshake"
+              class="header__link-svg-2"
+            />
+            <img
+              src="./img/svg/handshake-solid.svg"
+              alt="hanshake-solid"
+              class="header__link-svg-2-solid"
+            />
+          </div>
+          <span>Services</span></a
+        >
+
+        <a href="#portfolio" class="header__link">
+          <div class="window-svg">
+            <img
+              src="./img/svg/window-restore-regular.svg"
+              alt="window"
+              class="header__link-svg-3"
+            />
+            <img
+              src="./img/svg/window-restore-solid.svg"
+              alt="window-solid"
+              class="header__link-svg-3-solid"
+            />
+          </div>
+          <span>Portfolio</span></a
+        >
+      </nav>
+
+      <!-- fixed nav -->
+      <div class="open-close__container">
+        <div class="open-close"></div>
+      </div>
+      <nav class="fixed__nav">
+        <a href="#about-me" class="header__link header__link-1">
+          <svg viewBox="0 0 640 512" class="header__link-svg-1">
+            <path
+              d="M630.6 364.9l-90.3-90.2c-12-12-28.3-18.7-45.3-18.7h-79.3c-17.7 0-32 14.3-32 32v79.2c0 17 6.7 33.2 18.7 45.2l90.3 90.2c12.5 12.5 32.8 12.5 45.3 0l92.5-92.5c12.6-12.5 12.6-32.7.1-45.2zm-182.8-21c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24c0 13.2-10.7 24-24 24zm-223.8-88c70.7 0 128-57.3 128-128C352 57.3 294.7 0 224 0S96 57.3 96 128c0 70.6 57.3 127.9 128 127.9zm127.8 111.2V294c-12.2-3.6-24.9-6.2-38.2-6.2h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 287.9 0 348.1 0 422.3v41.6c0 26.5 21.5 48 48 48h352c15.5 0 29.1-7.5 37.9-18.9l-58-58c-18.1-18.1-28.1-42.2-28.1-67.9z"
+            ></path>
+          </svg>
+          <span>About me</span></a
+        >
+        <a href="#services" class="header__link">
+          <div class="hand-svg">
+            <img
+              src="./img/svg/handshake-regular.svg"
+              alt="hanshake"
+              class="header__link-svg-2"
+            />
+            <img
+              src="./img/svg/handshake-solid.svg"
+              alt="hanshake-solid"
+              class="header__link-svg-2-solid"
+            />
+          </div>
+          <span>Services</span></a
+        >
+
+        <a href="#portfolio" class="header__link">
+          <div class="window-svg">
+            <img
+              src="./img/svg/window-restore-regular.svg"
+              alt="window"
+              class="header__link-svg-3"
+            />
+            <img
+              src="./img/svg/window-restore-solid.svg"
+              alt="window-solid"
+              class="header__link-svg-3-solid"
+            />
+          </div>
+          <span>Portfolio</span></a
+        >
+      </nav>
+      <div class="header__container">
+        <div class="header__text">
+          <h3>hey guys!</h3>
+          <h1>I AM GIORGI GOGSADZE</h1>
+          <h2>a starter web developer</h2>
+          <a href="#portfolio" class="main-button">
+            <img
+              src="./img/gifs/pc.svg"
+              alt="mouse"
+              class="main-button__img-pc"
+            />
+            <span>See My Work</span>
+          </a>
+        </div>
+        <div class="header__img"></div>
+      </div>
+    </header>
+    <section class="about-me" id="about-me">
+      <div class="personal-cards">
+        <div class="div personal-cards-1">
+          <div class="personal-text-container">
+            <h4>Giorgi gogsadze - a starter web developer</h4>
+            <h5>born — 25.09.2004</h5>
+            <h5>living place: Kutaisi, Georgia</h5>
+            <h5>start learning web development — 21.06.2021</h5>
+            <p>
+              I believe, in this subject, the most important thing is to follow
+              the trends. I am a starter, but I already know, that I should
+              always learn, beacause in programming everything is developing so
+              fast and building a beautyful and responsive sites by using modern
+              techniques and methods is Priority for me.
+            </p>
+          </div>
+
+          <div class="button-container">
+            <button class="main-button">
+              <img
+                src="./img/gifs/paper.png"
+                alt="sv"
+                class="main-button__img-sv"
+              />
+              See my SV
+            </button>
+            <button class="personal__contact">
+              <svg viewBox="0 0 384 512" class="personal__contact-svg">
+                <path
+                  d="M97.333 506.966c-129.874-129.874-129.681-340.252 0-469.933 5.698-5.698 14.527-6.632 21.263-2.422l64.817 40.513a17.187 17.187 0 0 1 6.849 20.958l-32.408 81.021a17.188 17.188 0 0 1-17.669 10.719l-55.81-5.58c-21.051 58.261-20.612 122.471 0 179.515l55.811-5.581a17.188 17.188 0 0 1 17.669 10.719l32.408 81.022a17.188 17.188 0 0 1-6.849 20.958l-64.817 40.513a17.19 17.19 0 0 1-21.264-2.422zM247.126 95.473c11.832 20.047 11.832 45.008 0 65.055-3.95 6.693-13.108 7.959-18.718 2.581l-5.975-5.726c-3.911-3.748-4.793-9.622-2.261-14.41a32.063 32.063 0 0 0 0-29.945c-2.533-4.788-1.65-10.662 2.261-14.41l5.975-5.726c5.61-5.378 14.768-4.112 18.718 2.581zm91.787-91.187c60.14 71.604 60.092 175.882 0 247.428-4.474 5.327-12.53 5.746-17.552.933l-5.798-5.557c-4.56-4.371-4.977-11.529-.93-16.379 49.687-59.538 49.646-145.933 0-205.422-4.047-4.85-3.631-12.008.93-16.379l5.798-5.557c5.022-4.813 13.078-4.394 17.552.933zm-45.972 44.941c36.05 46.322 36.108 111.149 0 157.546-4.39 5.641-12.697 6.251-17.856 1.304l-5.818-5.579c-4.4-4.219-4.998-11.095-1.285-15.931 26.536-34.564 26.534-82.572 0-117.134-3.713-4.836-3.115-11.711 1.285-15.931l5.818-5.579c5.159-4.947 13.466-4.337 17.856 1.304z"
+                ></path>
+              </svg>
+              <span>contact me</span>
+            </button>
+          </div>
+        </div>
+        <div class="div personal-cards-2">
+          <div class="contact-text-container">
+            <p>
+              <a
+                href="https://www.facebook.com/giorgi.gogsadze.14811"
+                target="_blank"
+                ><img
+                  src="./img/contact/facebook-logo-2019.png"
+                  alt="facebook" /></a
+              ><span>Giorgi Gogsadze</span>
+            </p>
+            <p>
+              <a href="https://twitter.com/Giorgi19937353" target="_blank"
+                ><img
+                  src="./img/contact/twitter-logo-vector-png-clipart-1.png"
+                  alt="twitter" /></a
+              ><span>@Giorgi19937353</span>
+            </p>
+            <p>
+              <a
+                href="https://www.instagram.com/giorgigogsadze5/"
+                target="_blank"
+                ><img
+                  src="./img/contact/toppng.com-instagram-logo-transparent-logo-instagram-vector-2021-4030x4030.png"
+                  alt="instagram" /></a
+              ><span>giorgigogsadze5</span>
+            </p>
+            <p>
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRrlQspWcxQnxKwfDqzZmXBjnxlHLtQBxfclqbZvFDnJhHVrkHpFFbcjxQHkkFmXQBJNkjQ"
+                target="_blank"
+                ><img
+                  src="./img/contact/2560px-Gmail_icon_(2020).svg.png"
+                  alt="gmail" /></a
+              ><span>gogsadze1201@gmail.com</span>
+            </p>
+            <p>
+              <a href="https://www.whatsapp.com/" target="_blank"
+                ><img
+                  src="./img/contact/—Pngtree—whatsapp icon whatsapp logo whatsapp_3584845.png"
+                  alt="whatsapp" /></a
+              ><span>574 74 52 12</span>
+            </p>
+            <p class="liar-text">
+              I believe, in this subject, the most important thing is to follow
+              the trends. I am a starter, but I already know, that I should
+              always learn, beacause in programming everything is developing so
+              fast and building a beautyful and responsive sites by using modern
+              techniques and methods is Priority for me.
+            </p>
+          </div>
+          <button class="personal__about">
+            <span>about me</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="heading-container">
+        <h2 class="services__heading">What Service I Offer For You</h2>
+      </div>
+      <div class="services__content">
+        <div class="services-1">
+          <div class="services-1__head">
+            <svg viewBox="0 0 512 512" class="services__svg">
+              <path
+                d="M224 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zM80 160l26.66-53.33L160 80l-53.34-26.67L80 0 53.34 53.33 0 80l53.34 26.67L80 160zm352 128l-26.66 53.33L352 368l53.34 26.67L432 448l26.66-53.33L512 368l-53.34-26.67L432 288zm70.62-193.77L417.77 9.38C411.53 3.12 403.34 0 395.15 0c-8.19 0-16.38 3.12-22.63 9.38L9.38 372.52c-12.5 12.5-12.5 32.76 0 45.25l84.85 84.85c6.25 6.25 14.44 9.37 22.62 9.37 8.19 0 16.38-3.12 22.63-9.37l363.14-363.15c12.5-12.48 12.5-32.75 0-45.24zM359.45 203.46l-50.91-50.91 86.6-86.6 50.91 50.91-86.6 86.6z"
+              ></path>
+            </svg>
+            <h3>web design</h3>
+          </div>
+          <div class="services-1__text">
+            <p>build a site with exactly the design you want.</p>
+            <p>offer you some creative and modern designs.</p>
+            <p>choose the design, if you don't have one.</p>
+          </div>
+          <button class="offer-button">learn more</button>
+        </div>
+        <div class="services-1">
+          <div class="services-1__head">
+            <svg viewBox="0 0 512 512" class="services__svg">
+              <path
+                d="M224 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zM80 160l26.66-53.33L160 80l-53.34-26.67L80 0 53.34 53.33 0 80l53.34 26.67L80 160zm352 128l-26.66 53.33L352 368l53.34 26.67L432 448l26.66-53.33L512 368l-53.34-26.67L432 288zm70.62-193.77L417.77 9.38C411.53 3.12 403.34 0 395.15 0c-8.19 0-16.38 3.12-22.63 9.38L9.38 372.52c-12.5 12.5-12.5 32.76 0 45.25l84.85 84.85c6.25 6.25 14.44 9.37 22.62 9.37 8.19 0 16.38-3.12 22.63-9.37l363.14-363.15c12.5-12.48 12.5-32.75 0-45.24zM359.45 203.46l-50.91-50.91 86.6-86.6 50.91 50.91-86.6 86.6z"
+              ></path>
+            </svg>
+            <h3>
+              web design<br />
+              (placeholder)
+            </h3>
+          </div>
+          <div class="services-1__text">
+            <p>build a site with exactly the design you want.</p>
+            <p>offer you some creative and modern designs.</p>
+            <p>choose the design, if you don't have one.</p>
+          </div>
+          <button class="offer-button">learn more</button>
+        </div>
+        <div class="services-1">
+          <div class="services-1__head">
+            <svg viewBox="0 0 512 512" class="services__svg">
+              <path
+                d="M224 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zM80 160l26.66-53.33L160 80l-53.34-26.67L80 0 53.34 53.33 0 80l53.34 26.67L80 160zm352 128l-26.66 53.33L352 368l53.34 26.67L432 448l26.66-53.33L512 368l-53.34-26.67L432 288zm70.62-193.77L417.77 9.38C411.53 3.12 403.34 0 395.15 0c-8.19 0-16.38 3.12-22.63 9.38L9.38 372.52c-12.5 12.5-12.5 32.76 0 45.25l84.85 84.85c6.25 6.25 14.44 9.37 22.62 9.37 8.19 0 16.38-3.12 22.63-9.37l363.14-363.15c12.5-12.48 12.5-32.75 0-45.24zM359.45 203.46l-50.91-50.91 86.6-86.6 50.91 50.91-86.6 86.6z"
+              ></path>
+            </svg>
+            <h3>
+              web design<br />
+              (placeholder)
+            </h3>
+          </div>
+          <div class="services-1__text">
+            <p>build a site with exactly the design you want.</p>
+            <p>offer you some creative and modern designs.</p>
+            <p>choose the design, if you don't have one.</p>
+          </div>
+          <button class="offer-button">learn more</button>
+        </div>
+        <div class="services-1">
+          <div class="services-1__head">
+            <svg viewBox="0 0 512 512" class="services__svg">
+              <path
+                d="M224 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zM80 160l26.66-53.33L160 80l-53.34-26.67L80 0 53.34 53.33 0 80l53.34 26.67L80 160zm352 128l-26.66 53.33L352 368l53.34 26.67L432 448l26.66-53.33L512 368l-53.34-26.67L432 288zm70.62-193.77L417.77 9.38C411.53 3.12 403.34 0 395.15 0c-8.19 0-16.38 3.12-22.63 9.38L9.38 372.52c-12.5 12.5-12.5 32.76 0 45.25l84.85 84.85c6.25 6.25 14.44 9.37 22.62 9.37 8.19 0 16.38-3.12 22.63-9.37l363.14-363.15c12.5-12.48 12.5-32.75 0-45.24zM359.45 203.46l-50.91-50.91 86.6-86.6 50.91 50.91-86.6 86.6z"
+              ></path>
+            </svg>
+            <h3>
+              web design<br />
+              (placeholder)
+            </h3>
+          </div>
+          <div class="services-1__text">
+            <p>build a site with exactly the design you want.</p>
+            <p>offer you some creative and modern designs.</p>
+            <p>choose the design, if you don't have one.</p>
+          </div>
+          <button class="offer-button">learn more</button>
+        </div>
+      </div>
+    </section>
+    <div class="popup__container-1">
+      <div class="popup-1">
+        <svg viewBox="0 0 352 512" class="popup__close-1">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="popup-1-text">
+          <div class="popup-1-text-1">
+            <div class="popup-1__programming-languages">
+              <div class="html"></div>
+              <div class="css"></div>
+              <div class="svg"></div>
+              <div class="jquery"></div>
+            </div>
+            <div class="log-ic-bg">
+              <p class="make">make</p>
+              <div class="log-ic-bg__items">
+                <div>
+                  logos <img src="./img/learn-more/logo.png" alt="logo" />
+                </div>
+                <div>
+                  icons <img src="./img/learn-more/icon.png" alt="icon" />
+                </div>
+                <div>
+                  background images
+                  <img src="./img/learn-more/bgi.jpg" alt="background image" />
+                </div>
+              </div>
+            </div>
+            <p class="popup-1__photoshop">
+              photoshop images
+              <img src="./img/learn-more/photoshop.png" alt="photoshop" />
+            </p>
+            <p class="popup-1__design">
+              medium level graphical design
+              <img src="./img/learn-more/illustrator.png" alt="design" />
+            </p>
+          </div>
+          <div class="popup-1-text-2">
+            <p class="popup-1__responsive">
+              build a responsive sites, a responsive images
+              <img
+                src="./img/learn-more/responsive.png"
+                alt="responsive images"
+              />
+            </p>
+            <p>high quality web-site</p>
+            <p class="mob-desk">
+              good design at both, mobile and desktop devices
+              <img src="./img/learn-more/mob-desk.png" alt="mob-desk" />
+            </p>
+          </div>
+        </div>
+        <a href="#about-me" class="popup-1__button">
+          <span class="popup-1__button-1">c</span>
+          <span class="popup-1__button-2">o</span>
+          <span class="popup-1__button-3">n</span>
+          <span class="popup-1__button-4">t</span>
+          <span class="popup-1__button-5">a</span>
+          <span class="popup-1__button-6">c</span>
+          <span class="popup-1__button-7">t</span>
+          <span class="popup-1__button-8">&nbsp;</span>
+          <span class="popup-1__button-9">m</span>
+          <span class="popup-1__button-10">e</span></a
+        >
+      </div>
+    </div>
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__div-1">
+        <div class="portfolio__div-2">
+          <h2 class="portfolio__heading">My Websites</h2>
+          <div class="portfolio__sites">
+            <div class="portfolio__site-1">
+              <div class="portfolio__site__imgs__container">
+                <p class="site__name">Comics in Georgian</p>
+                <svg class="go-right-1" viewBox="0 0 320 512">
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                  ></path>
+                </svg>
+                <svg class="go-left-1" viewBox="0 0 320 512">
+                  <path
+                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                  ></path>
+                </svg>
+                <div class="portfolio__site__imgs">
+                  <div class="img-transformer">
+                    <img src="./img/site-images/cig/1.png" alt="1img" />
+                  </div>
+                  <div class="img-transformer">
+                    <img src="./img/site-images/cig/2.png" alt="2img" />
+                  </div>
+                  <div class="img-transformer">
+                    <img src="./img/site-images/cig/3.png" alt="3img" />
+                  </div>
+                  <div class="img-transformer">
+                    <img src="./img/site-images/cig/4.png" alt="4img" />
+                  </div>
+                  <div class="img-transformer">
+                    <img src="./img/site-images/cig/5.png" alt="5img" />
+                  </div>
+                </div>
+                <a
+                  href="./1-comicsingeorgian/comicsingeorgian.html"
+                  target="_blank"
+                  class="main-button"
+                >
+                  <img
+                    src="./img/gifs/globe.svg"
+                    alt="globe"
+                    class="main-button__img-globe"
+                  />
+                  <span>See web-page</span>
+                </a>
+              </div>
+              <div class="portfolio__site__text">
+                <p>
+                  languages used: <span>html</span>,&nbsp;
+                  <span>css</span>,&nbsp;
+                  <span>jquery</span>
+                </p>
+                <p>
+                  "my first ever site. I made it in <span>4 days</span>, after
+                  learning html and css for a month."
+                </p>
+                <p>language of this site is <span>Georgian</span></p>
+              </div>
+            </div>
+            <div class="portfolio__site-2">
+              <div class="portfolio__site__imgs__container">
+                <p class="site__name">LoveToServe</p>
+                <svg class="go-right-2" viewBox="0 0 320 512">
+                  <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                  ></path>
+                </svg>
+                <svg class="go-left-2" viewBox="0 0 320 512">
+                  <path
+                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                  ></path>
+                </svg>
+                <div class="portfolio__site__imgs">
+                  <div class="img-transformer">
+                    <img src="./img/site-images/lts/1.png" alt="1img" />
+                  </div>
+                  <div class="img-transformer">
+                    <img src="./img/site-images/lts/2.png" alt="2img" />
+                  </div>
+                  <div class="img-transformer">
+                    <img src="./img/site-images/lts/3.png" alt="3img" />
+                  </div>
+                  <div class="img-transformer">
+                    <img src="./img/site-images/lts/4.png" alt="4img" />
+                  </div>
+                  <div class="img-transformer">
+                    <img src="./img/site-images/lts/5.png" alt="5img" />
+                  </div>
+                  <div class="img-transformer">
+                    <img src="./img/site-images/lts/6.png" alt="5img" />
+                  </div>
+                  <div class="img-transformer">
+                    <img src="./img/site-images/lts/7.png" alt="5img" />
+                  </div>
+                </div>
+                <a
+                  href="./3-LoveToServe/LoveToServe.html"
+                  target="_blank"
+                  class="main-button"
+                >
+                  <img
+                    src="./img/gifs/globe.svg"
+                    alt="globe"
+                    class="main-button__img-globe"
+                  />
+                  <span>See web-page</span>
+                </a>
+              </div>
+              <div class="portfolio__site__text">
+                <p>
+                  languages used:
+                  <span>html</span>,&nbsp;<span>css</span>,&nbsp;
+                  <span>jquery</span>
+                </p>
+                <p>
+                  "my second site. I made it in <span>8 days</span>, after
+                  learning html and css for two month."
+                </p>
+                <p>language of this site is <span>Georgian</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>&copy; this web-page belongs to Giorgi Gogsadze.</p>
+    </footer>
+  </body>
+</html>
