@@ -1,0 +1,201 @@
+@media only screen and (max-width: 1260px) {
+  .breakpoint {
+    display: block;
+  }
+  .row {
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-nav {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .description {
+    font-size: 90%;
+  }
+  .logo {
+    width: 100px;
+    float: left;
+  }
+  .facebok {
+    width: 100px;
+  }
+  .main-nav {
+    display: none;
+    margin-top: 0;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+  .main-nav {
+    float: right;
+    margin-right: 30px;
+  }
+  .main-nav li {
+    display: block;
+    text-align: right;
+  }
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 2px 0;
+    font-size: 100%;
+  }
+  .sticky .main-nav {
+    margin-top: 0;
+    width: 300px;
+  }
+  .sticky .main-nav li {
+    display: block;
+  }
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 2px 0;
+  }
+  .sticky .mobile-nav-icon {
+    margin-top: 10px;
+  }
+  .sticky .mobile-nav-icon i {
+    float: right;
+    color: #555;
+  }
+  div[class*="comics-list"] div[class*="part"] {
+    height: 350px;
+  }
+  .abt-coms img {
+    width: 200px;
+  }
+  .com-2 {
+    top: 60px;
+    left: 320px;
+  }
+  .com-4 {
+    top: 180px;
+    left: 330px;
+  }
+  .com-6 {
+    top: 340px;
+    left: 320px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .quote p {
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-us {
+    height: 1000px;
+  }
+  .abt-coms img {
+    width: 300px;
+  }
+  .com-1 {
+    top: 20px;
+    left: 10px;
+  }
+  .com-3 {
+    top: 360px;
+    left: 10px;
+  }
+  .com-5 {
+    top: 150px;
+    left: 10px;
+  }
+  .header-text {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: 30px;
+  }
+  .header-text h1 {
+    font-size: 150%;
+    margin: 0;
+    color: #fffffb;
+    text-shadow: 0 2px 2px #1e1e24;
+  }
+  .about {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .down {
+    margin-top: 20px;
+    margin: 0;
+  }
+  div[class*="comics-list"] div[class*="part"] {
+    width: 30%;
+    margin-left: 20px;
+  }
+}
+/* @media only screen and (max-height: 638px) {
+  .header-text h1 {
+    font-size: 120%;
+  }
+  .logo {
+    width: 80px;
+  }
+  .about {
+    padding: 5px;
+  }
+  .down {
+    padding: 5px;
+  }
+} */
+@media only screen and (max-width: 650px) {
+  .abt-coms img {
+    width: 200px;
+  }
+  .com-2 {
+    top: 60px;
+    left: 220px;
+  }
+  .com-4 {
+    top: 180px;
+    left: 230px;
+  }
+  .com-6 {
+    top: 340px;
+    left: 220px;
+  }
+  div[class*="comics-list"] div[class*="part"] {
+    width: 40%;
+  }
+  div[class*="comics-list"] div[class*="part"]:last-of-type {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  div[class*="comics-list"] div[class*="part"] {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .abt-coms img {
+    display: none;
+  }
+  .about-us {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 375px) {
+  header {
+    height: 150vh;
+  }
+  .about {
+    padding: 10px;
+    margin: 10px;
+  }
+  .down {
+    padding: 10px;
+    margin: 10px;
+  }
+  .js--books {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
