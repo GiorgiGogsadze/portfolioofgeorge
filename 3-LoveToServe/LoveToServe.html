@@ -1,0 +1,2854 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoveToServe</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./logo/site.webmanifest" />
+    <link rel="mask-icon" href="./logo/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./logo/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-config" content="./logo/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="../jquery.js" defer></script>
+    <script src="../jquery.waypoints.min.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__above">
+        <img
+          src="./img/main-logo.png"
+          class="logo header__logo"
+          alt="web-page logo"
+        />
+        <div class="header__text">
+          <h1 class="heading-1 header__heading--1">LoveToServe</h1>
+          <br />
+          <h2 class="heading-2 header__heading--2">
+            ნუ დაელოდები მიმტანს, შეუკვეთე ახლავე
+          </h2>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#comeuli" class="header__link"
+              ><div class="header__1">
+                <img
+                  src="./img/navs/1-comeuli.jpg"
+                  alt="comeuli"
+                  class="hidden-img"
+                />
+                <h3 class="heading-3 header__item-name">ცომეული</h3>
+              </div></a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#hot" class="header__link"
+              ><div class="header__2">
+                <img src="./img/navs/2-hot.jpg" alt="hot" class="hidden-img" />
+                <h3 class="heading-3 header__item-name">ცხელი კერძები</h3>
+              </div></a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#fast-food" class="header__link"
+              ><div class="header__3">
+                <img
+                  src="./img/navs/3-fast-food.jpg"
+                  alt="fast food"
+                  class="hidden-img"
+                />
+                <h3 class="heading-3 header__item-name">სწრაფი კვება</h3>
+              </div></a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#soups" class="header__link"
+              ><div class="header__4">
+                <img
+                  src="./img/navs/4-soups.jpg"
+                  alt="soups"
+                  class="hidden-img"
+                />
+                <h3 class="heading-3 header__item-name">წვნიანები</h3>
+              </div></a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#salads" class="header__link"
+              ><div class="header__5">
+                <img
+                  src="./img/navs/5-salads.jpg"
+                  alt="salads"
+                  class="hidden-img"
+                />
+                <h3 class="heading-3 header__item-name">სალათები</h3>
+              </div></a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#suggestions" class="header__link"
+              ><div class="header__6">
+                <img
+                  src="./img/navs/6-suggestions.jpg"
+                  alt="suggestions"
+                  class="hidden-img"
+                />
+                <h3 class="heading-3 header__item-name">შემოთავაზებული</h3>
+              </div></a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#dessert" class="header__link"
+              ><div class="header__7">
+                <img
+                  src="./img/navs/7-dessert.jpg"
+                  alt="dessert"
+                  class="hidden-img"
+                />
+                <h3 class="heading-3 header__item-name">დესერტი</h3>
+              </div></a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#drinks" class="header__link"
+              ><div class="header__8">
+                <img
+                  src="./img/navs/8-drinks.jpg"
+                  alt="drinks"
+                  class="hidden-img"
+                />
+                <h3 class="heading-3 header__item-name">სასმელები</h3>
+              </div></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <a href="#footer" class="fixed">
+        <svg width="16" height="16" viewBox="0 0 320 512" class="fixed__svg">
+          <path
+            class="fixed__svg__path"
+            d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"
+          ></path>
+        </svg>
+      </a>
+    </header>
+    <!-- //////////////////////////////////////// -->
+    <!-- comeuli -->
+    <!-- //////////////////////////////////////// -->
+    <section class="comeuli" id="comeuli">
+      <div class="section-name-container">
+        <h2 class="section-name section-name-comeuli">ცომეული</h2>
+      </div>
+      <div class="cards-grid">
+        <!-- //////blini/////////// -->
+        <div class="card">
+          <img src="./img/cards/1-blini.jpg" alt="blini" />
+          <div class="card__front card__front-comeuli card__front-blini">
+            <img src="./img/cards/1-blini.jpg" alt="blini" />
+            <h4 class="heading-4 card__front__name">ბლინი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-comeuli card__back-blini">
+            <img src="./img/cards/1-blini.jpg" alt="blini" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ბლინი</h4>
+              <p>ფასი: 1 თეფში — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 6 ცალი ბლინი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////bubliki/////////// -->
+        <div class="card">
+          <img src="./img/cards/1-bubliki.jpg" alt="bubliki" />
+          <div class="card__front card__front-comeuli card__front-bubliki">
+            <img src="./img/cards/1-bubliki.jpg" alt="bubliki" />
+            <h4 class="heading-4 card__front__name">ბუბლიკი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-comeuli card__back-bubliki">
+            <img src="./img/cards/1-bubliki.jpg" alt="bubliki" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ბუბლიკი</h4>
+              <p>ფასი: 1 ცალი — 1ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 10 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////bulki/////////// -->
+        <div class="card">
+          <img src="./img/cards/1-bulki.jpg" alt="bulki" />
+          <div class="card__front card__front-comeuli card__front-bulki">
+            <img src="./img/cards/1-bulki.jpg" alt="bulki" />
+            <h4 class="heading-4 card__front__name">ფუნთუშა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-comeuli card__back-bulki">
+            <img src="./img/cards/1-bulki.jpg" alt="bulki" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ფუნთუშა</h4>
+              <p>ფასი: 1 ცალი — 2ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 10, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////khachapuri/////////// -->
+        <div class="card">
+          <img src="./img/cards/1-khachapuri.jpg" alt="khachapuri" />
+          <div class="card__front card__front-comeuli card__front-khachapuri">
+            <img src="./img/cards/1-khachapuri.jpg" alt="khachapuri" />
+            <h4 class="heading-4 card__front__name">ხაჭაპური</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-comeuli card__back-khachapuri">
+            <img src="./img/cards/1-khachapuri.jpg" alt="khachapuri" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ხაჭაპური</h4>
+              <p>ფასი: სხვადასხვა</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 20, მაქს. 25 წუთი</p>
+              <button class="khachapuri-button">
+                <p id="button-p">ნახე ვრცლად</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- //////khinkali/////////// -->
+        <div class="card">
+          <img src="./img/cards/1-khinkali.jpg" alt="khinkali" />
+          <div class="card__front card__front-comeuli card__front-khinkali">
+            <img src="./img/cards/1-khinkali.jpg" alt="khinkali" />
+            <h4 class="heading-4 card__front__name">ხინკალი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-comeuli card__back-khinkali">
+            <img src="./img/cards/1-khinkali.jpg" alt="khinkali" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ხინკალი</h4>
+              <p>ფასი: 1 ცალი — 1.5ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////kubdari/////////// -->
+        <div class="card">
+          <img src="./img/cards/1-kubdari.jpg" alt="kubdari" />
+          <div class="card__front card__front-comeuli card__front-kubdari">
+            <img src="./img/cards/1-kubdari.jpg" alt="kubdari" />
+            <h4 class="heading-4 card__front__name">კუბდარი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-comeuli card__back-kubdari">
+            <img src="./img/cards/1-kubdari.jpg" alt="kubdari" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">კუბდარი</h4>
+              <p>ფასი: 1 ცალი — 15ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////lobiani/////////// -->
+        <div class="card">
+          <img src="./img/cards/1-lobiani.jpg" alt="lobiani" />
+          <div class="card__front card__front-comeuli card__front-lobiani">
+            <img src="./img/cards/1-lobiani.jpg" alt="lobiani" />
+            <h4 class="heading-4 card__front__name">ლობიანი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-comeuli card__back-lobiani">
+            <img src="./img/cards/1-lobiani.jpg" alt="lobiani" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ლობიანი</h4>
+              <p>ფასი: 1 თეფში — 12ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////pizza/////////// -->
+        <div class="card">
+          <img src="./img/cards/1-pizza.jpg" alt="pizza" />
+          <div class="card__front card__front-comeuli card__front-pizza">
+            <img src="./img/cards/1-pizza.jpg" alt="pizza" />
+            <h4 class="heading-4 card__front__name">პიცა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-comeuli card__back-pizza">
+            <img src="./img/cards/1-pizza.jpg" alt="pizza" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">პიცა</h4>
+              <p>ფასი: სხვადასხვა</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 25 წუთი</p>
+              <button class="pizza-button">
+                <p id="button-p">ნახე ვრცლად</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// -->
+    <!-- hot -->
+    <!-- //////////////////////////////////////// -->
+    <section class="hot" id="hot">
+      <div class="section-name-container">
+        <h2 class="section-name section-name-hot">ცხელი კერძები</h2>
+      </div>
+      <div class="cards-grid">
+        <!-- //////kababi/////////// -->
+        <div class="card">
+          <img src="./img/cards/2-kababi.jpg" alt="kababi" />
+          <div class="card__front card__front-hot card__front-kababi">
+            <img src="./img/cards/2-kababi.jpg" alt="kababi" />
+            <h4 class="heading-4 card__front__name">ქაბაბი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-hot card__back-kababi">
+            <img src="./img/cards/2-kababi.jpg" alt="kababi" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ქაბაბი</h4>
+              <p>ფასი: 1 შამფური — 8ლ.</p>
+              <p>რაოდენობა განისაზღვრება შამფურებით</p>
+              <p>ერთ შამფურზე მოთავსებულია 300 გრამი ქაბაბი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////kalmakhi/////////// -->
+        <div class="card">
+          <img src="./img/cards/2-kalmakhi.jpg" alt="kalmakhi" />
+          <div class="card__front card__front-hot card__front-kalmakhi">
+            <img src="./img/cards/2-kalmakhi.jpg" alt="kalmakhi" />
+            <h4 class="heading-4 card__front__name">კალმახი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-hot card__back-kalmakhi">
+            <img src="./img/cards/2-kalmakhi.jpg" alt="kalmakhi" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">კალმახი</h4>
+              <p>ფასი: 1 თეფში — 17ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 1 კალმახი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- //////khbos-chashushuli/////////// -->
+        <div class="card">
+          <img
+            src="./img/cards/2-khbos-chashushuli.jpg"
+            alt="khbos-chashushuli"
+          />
+          <div
+            class="card__front card__front-hot card__front-khbos-chashushuli"
+          >
+            <img
+              src="./img/cards/2-khbos-chashushuli.jpg"
+              alt="khbos-chashushuli"
+            />
+            <h4 class="heading-4 card__front__name">ხბოს ჩაშუშული</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-hot card__back-khbos-chashushuli">
+            <img
+              src="./img/cards/2-khbos-chashushuli.jpg"
+              alt="khbos-chashushuli"
+            />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ხბოს ჩაშუშული</h4>
+              <p>ფასი: 1 თეფში — 18ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 200 გრამი ხბოს ჩაშუშული</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 18, მაქს. 26 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////lobio/////////// -->
+        <div class="card">
+          <img src="./img/cards/2-lobio.jpg" alt="lobio" />
+          <div class="card__front card__front-hot card__front-lobio">
+            <img src="./img/cards/2-lobio.jpg" alt="lobio" />
+            <h4 class="heading-4 card__front__name">ლობიო</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-hot card__back-lobio">
+            <img src="./img/cards/2-lobio.jpg" alt="lobio" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ლობიო</h4>
+              <p>ფასი: 1 ქოთანი — 8ლ.</p>
+              <p>რაოდენობა განისაზღვრება ქოთნებით</p>
+              <p>ერთ ქოთანში მოთავსებულია 200 გრამი ლობიო</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 20, მაქს. 30 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////mwadi/////////// -->
+        <div class="card">
+          <img src="./img/cards/2-mwadi.jpg" alt="mwadi" />
+          <div class="card__front card__front-hot card__front-mwadi">
+            <img src="./img/cards/2-mwadi.jpg" alt="mwadi" />
+            <h4 class="heading-4 card__front__name">მწვადი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-hot card__back-mwadi">
+            <img src="./img/cards/2-mwadi.jpg" alt="mwadi" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">მწვადი</h4>
+              <p>ფასი: 1 შამფური — 10ლ.</p>
+              <p>რაოდენობა განისაზღვრება შამფურით</p>
+              <p>ერთ შამფურზე მოთავსებულია 6 ცალი მწვადის ნაჭერი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 20, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////ojakhuri/////////// -->
+        <div class="card">
+          <img src="./img/cards/2-ojakhuri.jpg" alt="ojakhuri" />
+          <div class="card__front card__front-hot card__front-ojakhuri">
+            <img src="./img/cards/2-ojakhuri.jpg" alt="ojakhuri" />
+            <h4 class="heading-4 card__front__name">ოჯახური</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-hot card__back-ojakhuri">
+            <img src="./img/cards/2-ojakhuri.jpg" alt="ojakhuri" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ოჯახური</h4>
+              <p>ფასი: 1 თეფში — 18ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 200 გრამი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////shemtsvari-kartopili/////////// -->
+        <div class="card">
+          <img
+            src="./img/cards/2-shemtsvari-kartopili.jpg"
+            alt="shemtsvari-kartopili"
+          />
+          <div
+            class="card__front card__front-hot card__front-shemtsvari-kartopili"
+          >
+            <img
+              src="./img/cards/2-shemtsvari-kartopili.jpg"
+              alt="shemtsvari-kartopili"
+            />
+            <h4 class="heading-4 card__front__name">შემწვარი კართოფილი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div
+            class="card__back card__back-hot card__back-shemtsvari-kartopili"
+          >
+            <img
+              src="./img/cards/2-shemtsvari-kartopili.jpg"
+              alt="shemtsvari-kartopili"
+            />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">შემწვარი კართოფილი</h4>
+              <p>ფასი: 1 თეფში — 7ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 250 გრამი კართოფილი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 20 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////soko/////////// -->
+        <div class="card">
+          <img src="./img/cards/2-soko.jpg" alt="soko" />
+          <div class="card__front card__front-hot card__front-soko">
+            <img src="./img/cards/2-soko.jpg" alt="soko" />
+            <h4 class="heading-4 card__front__name">სოკო</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-hot card__back-soko">
+            <img src="./img/cards/2-soko.jpg" alt="soko" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">სოკო</h4>
+              <p>ფასი: 1 თეფში — 12ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 200 გრამი სოკო</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 10, მაქს. 20 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// -->
+    <!-- fast-food -->
+    <!-- //////////////////////////////////////// -->
+    <section class="fast-food" id="fast-food">
+      <div class="section-name-container">
+        <h2 class="section-name section-name-fast-food">სწრაფი კვება</h2>
+      </div>
+      <div class="cards-grid">
+        <!-- //////chips/////////// -->
+        <div class="card">
+          <img src="./img/cards/3-chips.jpg" alt="chips" />
+          <div class="card__front card__front-fast-food card__front-chips">
+            <img src="./img/cards/3-chips.jpg" alt="chips" />
+            <h4 class="heading-4 card__front__name">ჩიფსი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-fast-food card__back-chips">
+            <img src="./img/cards/3-chips.jpg" alt="chips" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ჩიფსი</h4>
+              <p>ფასი: 1 ჯამი — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება ჯამით</p>
+              <p>ერთ ჯამზე მოთავსებულია 150 გრამი ჩიფსი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 10 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////donut/////////// -->
+        <div class="card">
+          <img src="./img/cards/3-donut.jpg" alt="donut" />
+          <div class="card__front card__front-fast-food card__front-donut">
+            <img src="./img/cards/3-donut.jpg" alt="donut" />
+            <h4 class="heading-4 card__front__name">დონატი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-fast-food card__back-donut">
+            <img src="./img/cards/3-donut.jpg" alt="donut" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">დონატი</h4>
+              <p>ფასი: სხვადასხვა</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 10 წუთი</p>
+              <button class="donut-button">
+                <p id="button-p">ნახე ვრცლად</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- //////fry/////////// -->
+        <div class="card">
+          <img src="./img/cards/3-fry.jpg" alt="fry" />
+          <div class="card__front card__front-fast-food card__front-fry">
+            <img src="./img/cards/3-fry.jpg" alt="fry" />
+            <h4 class="heading-4 card__front__name">კართოფილი ფრი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-fast-food card__back-fry">
+            <img src="./img/cards/3-fry.jpg" alt="fry" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">კართოფილი ფრი</h4>
+              <p>ფასი: 1 თეფში — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 150 გრამი ფრი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////hamburger/////////// -->
+        <div class="card">
+          <img src="./img/cards/3-hamburger.jpg" alt="hamburger" />
+          <div class="card__front card__front-fast-food card__front-hamburger">
+            <img src="./img/cards/3-hamburger.jpg" alt="hamburger" />
+            <h4 class="heading-4 card__front__name">ჰამბურგერი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-fast-food card__back-hamburger">
+            <img src="./img/cards/3-hamburger.jpg" alt="hamburger" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ჰამბურგერი</h4>
+              <p>ფასი: 1 ცალი — 12ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 12, მაქს. 20 წუთი</p>
+              <button class="hamburger-button">
+                <p id="button-p">ნახე ვრცლად</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- //////hot-dog/////////// -->
+        <div class="card">
+          <img src="./img/cards/3-hot-dog.jpg" alt="hot-dog" />
+          <div class="card__front card__front-fast-food card__front-hot-dog">
+            <img src="./img/cards/3-hot-dog.jpg" alt="hot-dog" />
+            <h4 class="heading-4 card__front__name">ჰოთ-დოგი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-fast-food card__back-hot-dog">
+            <img src="./img/cards/3-hot-dog.jpg" alt="hot-dog" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ჰოთ-დოგი</h4>
+              <p>ფასი: 1 ცალი — 4ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////mexican-potato/////////// -->
+        <div class="card">
+          <img src="./img/cards/3-mexican-potato.jpg" alt="mexican-potato" />
+          <div
+            class="card__front card__front-fast-food card__front-mexican-potato"
+          >
+            <img src="./img/cards/3-mexican-potato.jpg" alt="mexican-potato" />
+            <h4 class="heading-4 card__front__name">მექსიკური კართოფილი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div
+            class="card__back card__back-fast-food card__back-mexican-potato"
+          >
+            <img src="./img/cards/3-mexican-potato.jpg" alt="mexican-potato" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">მექსიკური კართოფილი</h4>
+              <p>ფასი: 1 თეფში — 9ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 150 გრამი კართოფილი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////nugets/////////// -->
+        <div class="card">
+          <img src="./img/cards/3-nugets.jpg" alt="nugets" />
+          <div class="card__front card__front-fast-food card__front-nugets">
+            <img src="./img/cards/3-nugets.jpg" alt="nugets" />
+            <h4 class="heading-4 card__front__name">ქათმის ნაგეთსი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-fast-food card__back-nugets">
+            <img src="./img/cards/3-nugets.jpg" alt="nugets" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ქათმის ნაგეთსი</h4>
+              <p>ფასი: 1 თეფში — 11ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 9 ცალი ნაგეთსი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 22 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////shawarma/////////// -->
+        <div class="card">
+          <img src="./img/cards/3-shawarma.jpg" alt="shawarma" />
+          <div class="card__front card__front-fast-food card__front-shawarma">
+            <img src="./img/cards/3-shawarma.jpg" alt="shawarma" />
+            <h4 class="heading-4 card__front__name">შაურმა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-fast-food card__back-shawarma">
+            <img src="./img/cards/3-shawarma.jpg" alt="shawarma" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">შაურმა</h4>
+              <p>ფასი: სხვადასხვა</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 13, მაქს. 20 წუთი</p>
+              <button class="shawarma-button">
+                <p id="button-p">ნახე ვრცლად</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// -->
+    <!-- soups -->
+    <!-- //////////////////////////////////////// -->
+    <section class="soups" id="soups">
+      <div class="section-name-container">
+        <h2 class="section-name section-name-soups">წვნიანები</h2>
+      </div>
+      <div class="cards-grid">
+        <!-- //////borshch/////////// -->
+        <div class="card">
+          <img src="./img/cards/4-borshch.jpg" alt="borshch" />
+          <div class="card__front card__front-soups card__front-borshch">
+            <img src="./img/cards/4-borshch.jpg" alt="borshch" />
+            <h4 class="heading-4 card__front__name">ბორში</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-soups card__back-borshch">
+            <img src="./img/cards/4-borshch.jpg" alt="borshch" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ბორში</h4>
+              <p>ფასი: 1 თეფში — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 100 გრამი ბორში</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 11, მაქს. 23 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////bulioni/////////// -->
+        <div class="card">
+          <img src="./img/cards/4-bulioni.jpg" alt="bulioni" />
+          <div class="card__front card__front-soups card__front-bulioni">
+            <img src="./img/cards/4-bulioni.jpg" alt="bulioni" />
+            <h4 class="heading-4 card__front__name">ბულიონი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-soups card__back-bulioni">
+            <img src="./img/cards/4-bulioni.jpg" alt="bulioni" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ბულიონი</h4>
+              <p>ფასი: 1 თეფში — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 100 გრამი ბულიონი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 11, მაქს. 23 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////chaqapuli/////////// -->
+        <div class="card">
+          <img src="./img/cards/4-chaqapuli.jpg" alt="chaqapuli" />
+          <div class="card__front card__front-soups card__front-chaqapuli">
+            <img src="./img/cards/4-chaqapuli.jpg" alt="chaqapuli" />
+            <h4 class="heading-4 card__front__name">ჩაქაფული</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-soups card__back-chaqapuli">
+            <img src="./img/cards/4-chaqapuli.jpg" alt="chaqapuli" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ჩაქაფული</h4>
+              <p>ფასი: 1 თეფში — 13ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 180 გრამი ჩაქაფული</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 17, მაქს. 28 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////cucumber-soup/////////// -->
+        <div class="card">
+          <img src="./img/cards/4-cucumber-soup.jpg" alt="cucumber-soup" />
+          <div class="card__front card__front-soups card__front-cucumber-soup">
+            <img src="./img/cards/4-cucumber-soup.jpg" alt="cucumber-soup" />
+            <h4 class="heading-4 card__front__name">კიტრის ცივი წვნიანი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-soups card__back-cucumber-soup">
+            <img src="./img/cards/4-cucumber-soup.jpg" alt="cucumber-soup" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">კიტრის ცივი წვნიანი</h4>
+              <p>ფასი: 1 თეფში — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 130 გრამი წვნიანი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////matsvnis-supi/////////// -->
+        <div class="card">
+          <img src="./img/cards/4-matsvnis-supi.jpg" alt="matsvnis-supi" />
+          <div class="card__front card__front-soups card__front-matsvnis-supi">
+            <img src="./img/cards/4-matsvnis-supi.jpg" alt="matsvnis-supi" />
+            <h4 class="heading-4 card__front__name">მაწვნის სუპი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-soups card__back-matsvnis-supi">
+            <img src="./img/cards/4-matsvnis-supi.jpg" alt="matsvnis-supi" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">მაწვნის სუპი</h4>
+              <p>ფასი: 1 თეფში — 7ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 120 გრამი სუპი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 10, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////muchroom-soup/////////// -->
+        <div class="card">
+          <img src="./img/cards/4-muchroom-soup.jpg" alt="muchroom-soup" />
+          <div class="card__front card__front-soups card__front-muchroom-soup">
+            <img src="./img/cards/4-muchroom-soup.jpg" alt="muchroom-soup" />
+            <h4 class="heading-4 card__front__name">სოკოს სუპი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-soups card__back-muchroom-soup">
+            <img src="./img/cards/4-muchroom-soup.jpg" alt="muchroom-soup" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">სოკოს სუპი</h4>
+              <p>ფასი: 1 თეფში — 6ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 100 გრამი სუპი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 12, მაქს. 18 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////noodle/////////// -->
+        <div class="card">
+          <img src="./img/cards/4-noodle.jpg" alt="noodle" />
+          <div class="card__front card__front-soups card__front-noodle">
+            <img src="./img/cards/4-noodle.jpg" alt="noodle" />
+            <h4 class="heading-4 card__front__name">ატრიის წვნიანი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-soups card__back-noodle">
+            <img src="./img/cards/4-noodle.jpg" alt="noodle" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ატრიის წვნიანი</h4>
+              <p>ფასი: 1 თეფში — 8ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 120 გრამი წვნიანი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 20 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////soup/////////// -->
+        <div class="card">
+          <img src="./img/cards/4-soup.jpg" alt="soup" />
+          <div class="card__front card__front-soups card__front-soup">
+            <img src="./img/cards/4-soup.jpg" alt="soup" />
+            <h4 class="heading-4 card__front__name">სუპი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-soups card__back-soup">
+            <img src="./img/cards/4-soup.jpg" alt="soup" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">სუპი</h4>
+              <p>ფასი: 1 თეფში — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 100 გრამი სუპი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 12, მაქს. 17 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// -->
+    <!-- salads -->
+    <!-- //////////////////////////////////////// -->
+    <section class="salads" id="salads">
+      <div class="section-name-container">
+        <h2 class="section-name section-name-salads">სალათები</h2>
+      </div>
+      <div class="cards-grid">
+        <!-- //////caesar/////////// -->
+        <div class="card">
+          <img src="./img/cards/5-caesar.jpg" alt="caesar" />
+          <div class="card__front card__front-salads card__front-caesar">
+            <img src="./img/cards/5-caesar.jpg" alt="caesar" />
+            <h4 class="heading-4 card__front__name">ცეზარი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-salads card__back-caesar">
+            <img src="./img/cards/5-caesar.jpg" alt="caesar" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ცეზარი</h4>
+              <p>ფასი: 1 თეფში — 8ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 120 გრამი სალათა</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////chicken-salad/////////// -->
+        <div class="card">
+          <img src="./img/cards/5-chicken-salad.jpg" alt="chicken-salad" />
+          <div class="card__front card__front-salads card__front-chicken-salad">
+            <img src="./img/cards/5-chicken-salad.jpg" alt="chicken-salad" />
+            <h4 class="heading-4 card__front__name">ქათმის სალათა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-salads card__back-chicken-salad">
+            <img src="./img/cards/5-chicken-salad.jpg" alt="chicken-salad" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ქათმის სალათა</h4>
+              <p>ფასი: 1 თეფში — 7ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 120 გრამი სალათა</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////cucumber-and-tomato/////////// -->
+        <div class="card">
+          <img
+            src="./img/cards/5-cucumber-and-tomato.jpg"
+            alt="cucumber-and-tomato"
+          />
+          <div
+            class="
+              card__front card__front-salads card__front-cucumber-and-tomato
+            "
+          >
+            <img
+              src="./img/cards/5-cucumber-and-tomato.jpg"
+              alt="cucumber-and-tomato"
+            />
+            <h4 class="heading-4 card__front__name">
+              კიტრის და პამიდვრის სალათა
+            </h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div
+            class="card__back card__back-salads card__back-cucumber-and-tomato"
+          >
+            <img
+              src="./img/cards/5-cucumber-and-tomato.jpg"
+              alt="cucumber-and-tomato"
+            />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">
+                კიტრის და პამიდვრის სალათა
+              </h4>
+              <p>ფასი: 1 თეფში — 6ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 150 გრამი სალათა</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 10 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////fish-salad/////////// -->
+        <div class="card">
+          <img src="./img/cards/5-fish-salad.jpg" alt="fish-salad" />
+          <div class="card__front card__front-salads card__front-fish-salad">
+            <img src="./img/cards/5-fish-salad.jpg" alt="fish-salad" />
+            <h4 class="heading-4 card__front__name">თევზის სალათა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-salads card__back-fish-salad">
+            <img src="./img/cards/5-fish-salad.jpg" alt="fish-salad" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">თევზის სალათა</h4>
+              <p>ფასი: 1 თეფში — 10ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 100 გრამი სალათა</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 10, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////greece-salad/////////// -->
+        <div class="card">
+          <img src="./img/cards/5-greece-salad.jpg" alt="greece-salad" />
+          <div class="card__front card__front-salads card__front-greece-salad">
+            <img src="./img/cards/5-greece-salad.jpg" alt="greece-salad" />
+            <h4 class="heading-4 card__front__name">ბერძნული სალათა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-salads card__back-greece-salad">
+            <img src="./img/cards/5-greece-salad.jpg" alt="greece-salad" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ბერძნული სალათა</h4>
+              <p>ფასი: 1 თეფში — 6ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 130 გრამი სალათა</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 10 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////green-salad/////////// -->
+        <div class="card">
+          <img src="./img/cards/5-green-salad.jpg" alt="green-salad" />
+          <div class="card__front card__front-salads card__front-green-salad">
+            <img src="./img/cards/5-green-salad.jpg" alt="green-salad" />
+            <h4 class="heading-4 card__front__name">მწვანე სალათა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-salads card__back-green-salad">
+            <img src="./img/cards/5-green-salad.jpg" alt="green-salad" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">მწვანე სალათა</h4>
+              <p>ფასი: 1 თეფში — 7ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 130 გრამი სალათა</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 10 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////muchroom-salad/////////// -->
+        <div class="card">
+          <img src="./img/cards/5-muchroom-salad.jpg" alt="muchroom-salad" />
+          <div
+            class="card__front card__front-salads card__front-muchroom-salad"
+          >
+            <img src="./img/cards/5-muchroom-salad.jpg" alt="muchroom-salad" />
+            <h4 class="heading-4 card__front__name">სოკოს სალათა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-salads card__back-muchroom-salad">
+            <img src="./img/cards/5-muchroom-salad.jpg" alt="muchroom-salad" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">სოკოს სალათა</h4>
+              <p>ფასი: 1 თეფში — 9ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 100 გრამი სალათა</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 8, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////olivie/////////// -->
+        <div class="card">
+          <img src="./img/cards/5-olivie.jpg" alt="olivie" />
+          <div class="card__front card__front-salads card__front-olivie">
+            <img src="./img/cards/5-olivie.jpg" alt="olivie" />
+            <h4 class="heading-4 card__front__name">ოლივიე (ვინეგრეტი)</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-salads card__back-olivie">
+            <img src="./img/cards/5-olivie.jpg" alt="olivie" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ოლივიე(ვინეგრეტი)</h4>
+              <p>ფასი: 1 თეფში — 8ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 150 გრამი სალათა</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 7, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// -->
+    <!-- suggestions -->
+    <!-- //////////////////////////////////////// -->
+    <section class="suggestions" id="suggestions">
+      <div class="section-name-container">
+        <h2 class="section-name section-name-suggestions">შემოთავაზებული</h2>
+      </div>
+      <div class="cards-grid">
+        <!-- //////corn/////////// -->
+        <div class="card">
+          <img src="./img/cards/6-corn.jpg" alt="corn" />
+          <div class="card__front card__front-suggestions card__front-corn">
+            <img src="./img/cards/6-corn.jpg" alt="corn" />
+            <h4 class="heading-4 card__front__name">მოხარშული სიმინდი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-suggestions card__back-corn">
+            <img src="./img/cards/6-corn.jpg" alt="corn" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">მოხარშული სიმინდი</h4>
+              <p>ფასი: 1 ცალი — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 13, მაქს. 22 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////croissant/////////// -->
+        <div class="card">
+          <img src="./img/cards/6-croissant.jpg" alt="croissant" />
+          <div
+            class="card__front card__front-suggestions card__front-croissant"
+          >
+            <img src="./img/cards/6-croissant.jpg" alt="croissant" />
+            <h4 class="heading-4 card__front__name">კრუასანი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-suggestions card__back-croissant">
+            <img src="./img/cards/6-croissant.jpg" alt="croissant" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">კრუასანი</h4>
+              <p>ფასი: 1 ცალი — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 10 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////french-toast/////////// -->
+        <div class="card">
+          <img src="./img/cards/6-french-toast.jpg" alt="french-toast" />
+          <div
+            class="card__front card__front-suggestions card__front-french-toast"
+          >
+            <img src="./img/cards/6-french-toast.jpg" alt="french-toast" />
+            <h4 class="heading-4 card__front__name">ფრანგული ტოსტი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div
+            class="card__back card__back-suggestions card__back-french-toast"
+          >
+            <img src="./img/cards/6-french-toast.jpg" alt="french-toast" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ფრანგული ტოსტი</h4>
+              <p>ფასი: 1 ცალი — 6ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 12 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////lasagna/////////// -->
+        <div class="card">
+          <img src="./img/cards/6-lasagna.jpg" alt="lasagna" />
+          <div class="card__front card__front-suggestions card__front-lasagna">
+            <img src="./img/cards/6-lasagna.jpg" alt="lasagna" />
+            <h4 class="heading-4 card__front__name">ლაზანია</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-suggestions card__back-lasagna">
+            <img src="./img/cards/6-lasagna.jpg" alt="lasagna" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ლაზანია</h4>
+              <p>ფასი: 1 ცალი — 9ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 11, მაქს. 18 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////pelmeni/////////// -->
+        <div class="card">
+          <img src="./img/cards/6-pelmeni.jpg" alt="pelmeni" />
+          <div class="card__front card__front-suggestions card__front-pelmeni">
+            <img src="./img/cards/6-pelmeni.jpg" alt="pelmeni" />
+            <h4 class="heading-4 card__front__name">პელმენი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-suggestions card__back-pelmeni">
+            <img src="./img/cards/6-pelmeni.jpg" alt="pelmeni" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">პელმენი</h4>
+              <p>ფასი: 1 თეფში — 7ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 18 ცალი პელმენი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////rice/////////// -->
+        <div class="card">
+          <img src="./img/cards/6-rice.jpg" alt="rice" />
+          <div class="card__front card__front-suggestions card__front-rice">
+            <img src="./img/cards/6-rice.jpg" alt="rice" />
+            <h4 class="heading-4 card__front__name">ბრინჯი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-suggestions card__back-rice">
+            <img src="./img/cards/6-rice.jpg" alt="rice" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ბრინჯი</h4>
+              <p>ფასი: 1 თეფში — 11ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 150 გრამი ბრინჯი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 12, მაქს. 25 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////shushi/////////// -->
+        <div class="card">
+          <img src="./img/cards/6-shushi.jpg" alt="shushi" />
+          <div class="card__front card__front-suggestions card__front-shushi">
+            <img src="./img/cards/6-shushi.jpg" alt="shushi" />
+            <h4 class="heading-4 card__front__name">სუში</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-suggestions card__back-shushi">
+            <img src="./img/cards/6-shushi.jpg" alt="shushi" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">სუში</h4>
+              <p>ფასი: 1 ცალი — 12ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 12, მაქს. 23 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////taco/////////// -->
+        <div class="card">
+          <img src="./img/cards/6-taco.jpg" alt="taco" />
+          <div class="card__front card__front-suggestions card__front-taco">
+            <img src="./img/cards/6-taco.jpg" alt="taco" />
+            <h4 class="heading-4 card__front__name">ტაკო</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-suggestions card__back-taco">
+            <img src="./img/cards/6-taco.jpg" alt="taco" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ტაკო</h4>
+              <p>ფასი: 1 ცალი — 9ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 13, მაქს. 19 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// -->
+    <!-- dessert -->
+    <!-- //////////////////////////////////////// -->
+    <section class="dessert" id="dessert">
+      <div class="section-name-container">
+        <h2 class="section-name section-name-dessert">დესერტი</h2>
+      </div>
+      <div class="cards-grid">
+        <!-- //////apple-pie/////////// -->
+        <div class="card">
+          <img src="./img/cards/7-apple-pie.jpg" alt="apple-pie" />
+          <div class="card__front card__front-dessert card__front-apple-pie">
+            <img src="./img/cards/7-apple-pie.jpg" alt="apple-pie" />
+            <h4 class="heading-4 card__front__name">ვაშლის პეროგი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-dessert card__back-apple-pie">
+            <img src="./img/cards/7-apple-pie.jpg" alt="apple-pie" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ვაშლის პეროგი</h4>
+              <p>ფასი: 1 ცალი — 13ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 14, მაქს. 23 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////chocolate/////////// -->
+        <div class="card">
+          <img src="./img/cards/7-chocolate.jpg" alt="chocolate" />
+          <div class="card__front card__front-dessert card__front-chocolate">
+            <img src="./img/cards/7-chocolate.jpg" alt="chocolate" />
+            <h4 class="heading-4 card__front__name">შოკოლადი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-dessert card__back-chocolate">
+            <img src="./img/cards/7-chocolate.jpg" alt="chocolate" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">შოკოლადი</h4>
+              <p>ფასი: 1 ჯამი — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება ჯამით</p>
+              <p>ერთ ჯამზე მოთავსებულია 12 ცალი შოკოლადი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 12 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////ice-cream/////////// -->
+        <div class="card">
+          <img src="./img/cards/7-ice-cream.jpg" alt="ice-cream" />
+          <div class="card__front card__front-dessert card__front-ice-cream">
+            <img src="./img/cards/7-ice-cream.jpg" alt="ice-cream" />
+            <h4 class="heading-4 card__front__name">ნაყინი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-dessert card__back-ice-cream">
+            <img src="./img/cards/7-ice-cream.jpg" alt="ice-cream" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ნაყინი</h4>
+              <p>ფასი: სხვადასხვა</p>
+              <p>რაოდენობა განისაზღვრება ჭიქით</p>
+              <p>ერთ ჭიქაში მოთავსებულია 100 გრამი ნაყინი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 15 წუთი</p>
+              <button class="ice-cream-button">
+                <p id="button-p">ნახე ვრცლად</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- //////jogurt/////////// -->
+        <div class="card">
+          <img src="./img/cards/7-jogurt.jpg" alt="jogurt" />
+          <div class="card__front card__front-dessert card__front-jogurt">
+            <img src="./img/cards/7-jogurt.jpg" alt="jogurt" />
+            <h4 class="heading-4 card__front__name">იოგურტი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-dessert card__back-jogurt">
+            <img src="./img/cards/7-jogurt.jpg" alt="jogurt" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">იოგურტი</h4>
+              <p>ფასი: 1 ჭიქა — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება ჭიქით</p>
+              <p>ერთ ჭიქაში მოთავსებულია 100 გრამი იოგურტი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////khacho/////////// -->
+        <div class="card">
+          <img src="./img/cards/7-khacho.jpg" alt="khacho" />
+          <div class="card__front card__front-dessert card__front-khacho">
+            <img src="./img/cards/7-khacho.jpg" alt="khacho" />
+            <h4 class="heading-4 card__front__name">ხაჭო</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-dessert card__back-khacho">
+            <img src="./img/cards/7-khacho.jpg" alt="khacho" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ხაჭო</h4>
+              <p>ფასი: 1 ცალი — 7ლ.</p>
+              <p>რაოდენობა განისაზღვრება ცალობით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 15, მაქს. 20 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////matsoni/////////// -->
+        <div class="card">
+          <img src="./img/cards/7-matsoni.jpg" alt="matsoni" />
+          <div class="card__front card__front-dessert card__front-matsoni">
+            <img src="./img/cards/7-matsoni.jpg" alt="matsoni" />
+            <h4 class="heading-4 card__front__name">მაწონი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-dessert card__back-matsoni">
+            <img src="./img/cards/7-matsoni.jpg" alt="matsoni" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">მაწონი</h4>
+              <p>ფასი: 1 ჭიქა — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება ჭიქით</p>
+              <p>ერთ ჭიქაში მოთავსებულია 100 გრამი მაწონი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////milkshake/////////// -->
+        <div class="card">
+          <img src="./img/cards/7-milkshake.jpg" alt="milkshake" />
+          <div class="card__front card__front-dessert card__front-milkshake">
+            <img src="./img/cards/7-milkshake.jpg" alt="milkshake" />
+            <h4 class="heading-4 card__front__name">მილქშეიკი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-dessert card__back-milkshake">
+            <img src="./img/cards/7-milkshake.jpg" alt="milkshake" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">მილქშეიკი</h4>
+              <p>ფასი: სხვადასხვა</p>
+              <p>რაოდენობა განისაზღვრება ჭიქით</p>
+              <p>ერთ ჭიქაში მოთავსებულია 90 გრამი მილქშეიკი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 15 წუთი</p>
+              <button class="milkshake-button">
+                <p id="button-p">ნახე ვრცლად</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- //////mixed-fruit/////////// -->
+        <div class="card">
+          <img src="./img/cards/7-mixed-fruit.jpg" alt="mixed-fruit" />
+          <div class="card__front card__front-dessert card__front-mixed-fruit">
+            <img src="./img/cards/7-mixed-fruit.jpg" alt="mixed-fruit" />
+            <h4 class="heading-4 card__front__name">ხილის ასორტი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-dessert card__back-mixed-fruit">
+            <img src="./img/cards/7-mixed-fruit.jpg" alt="mixed-fruit" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ხილის ასორტი</h4>
+              <p>ფასი: 1 თეფში — 10ლ.</p>
+              <p>რაოდენობა განისაზღვრება თეფშით</p>
+              <p>ერთ თეფშზე მოთავსებულია 300 გრამი ხილი</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 15 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// -->
+    <!-- drinks -->
+    <!-- //////////////////////////////////////// -->
+    <section class="drinks" id="drinks">
+      <div class="section-name-container">
+        <h2 class="section-name section-name-drinks">სასმელები</h2>
+      </div>
+      <div class="cards-grid">
+        <!-- //////borjomi/////////// -->
+        <div class="card">
+          <img src="./img/cards/8-borjomi.jpg" alt="borjomi" />
+          <div class="card__front card__front-drinks card__front-borjomi">
+            <img src="./img/cards/8-borjomi.jpg" alt="borjomi" />
+            <h4 class="heading-4 card__front__name">ბორჯომი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-drinks card__back-borjomi">
+            <img src="./img/cards/8-borjomi.jpg" alt="borjomi" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ბორჯომი</h4>
+              <p>ფასი: 1 ბოთლი — 2ლ.</p>
+              <p>100 გრამი</p>
+              <p>რაოდენობა განისაზღვრება ბოთლით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 2, მაქს. 5 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////coca-cola/////////// -->
+        <div class="card">
+          <img src="./img/cards/8-coca-cola.jpg" alt="coca-cola" />
+          <div class="card__front card__front-drinks card__front-coca-cola">
+            <img src="./img/cards/8-coca-cola.jpg" alt="coca-cola" />
+            <h4 class="heading-4 card__front__name">კოკა-კოლა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-drinks card__back-coca-cola">
+            <img src="./img/cards/8-coca-cola.jpg" alt="coca-cola" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">კოკა-კოლა</h4>
+              <p>ფასი: 1 ბოთლი — 3ლ.</p>
+              <p>100 გრამი</p>
+              <p>რაოდენობა განისაზღვრება ბოთლით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 2, მაქს. 5 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////coffee/////////// -->
+        <div class="card">
+          <img src="./img/cards/8-coffee.jpg" alt="coffee" />
+          <div class="card__front card__front-drinks card__front-coffee">
+            <img src="./img/cards/8-coffee.jpg" alt="coffee" />
+            <h4 class="heading-4 card__front__name">ყავა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-drinks card__back-coffee">
+            <img src="./img/cards/8-coffee.jpg" alt="coffee" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ყავა</h4>
+              <p>ფასი: სხვადასხვა</p>
+              <p>რაოდენობა განისაზღვრება ჭიქით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 12 წუთი</p>
+              <button class="coffee-button">
+                <p id="button-p">ნახე ვრცლად</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- //////energetic/////////// -->
+        <div class="card">
+          <img src="./img/cards/8-energetic.jpg" alt="energetic" />
+          <div class="card__front card__front-drinks card__front-energetic">
+            <img src="./img/cards/8-energetic.jpg" alt="energetic" />
+            <h4 class="heading-4 card__front__name">ენერგეტიკული</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-drinks card__back-energetic">
+            <img src="./img/cards/8-energetic.jpg" alt="energetic" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ენერგეტიკული</h4>
+              <p>ფასი: 1 ქილა — 4ლ.</p>
+              <p>100 გრამი</p>
+              <p>რაოდენობა განისაზღვრება ქილით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 2, მაქს. 5 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////fanta/////////// -->
+        <div class="card">
+          <img src="./img/cards/8-fanta.jpg" alt="fanta" />
+          <div class="card__front card__front-drinks card__front-fanta">
+            <img src="./img/cards/8-fanta.jpg" alt="fanta" />
+            <h4 class="heading-4 card__front__name">ფანტა</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-drinks card__back-fanta">
+            <img src="./img/cards/8-fanta.jpg" alt="fanta" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ფანტა</h4>
+              <p>ფასი: 1 ბოთლი — 3ლ.</p>
+              <p>100 გრამი</p>
+              <p>რაოდენობა განისაზღვრება ბოთლით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 2, მაქს. 5 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////limonati/////////// -->
+        <div class="card">
+          <img src="./img/cards/8-limonati.jpg" alt="limonati" />
+          <div class="card__front card__front-drinks card__front-limonati">
+            <img src="./img/cards/8-limonati.jpg" alt="limonati" />
+            <h4 class="heading-4 card__front__name">ლიმონათი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-drinks card__back-limonati">
+            <img src="./img/cards/8-limonati.jpg" alt="limonati" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ლიმონათი</h4>
+              <p>ფასი: 1 ბოთლი — 4ლ.</p>
+              <p>150 გრამი</p>
+              <p>რაოდენობა განისაზღვრება ბოთლით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 2, მაქს. 5 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////tea/////////// -->
+        <div class="card">
+          <img src="./img/cards/8-tea.jpg" alt="tea" />
+          <div class="card__front card__front-drinks card__front-tea">
+            <img src="./img/cards/8-tea.jpg" alt="tea" />
+            <h4 class="heading-4 card__front__name">ჩაი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-drinks card__back-tea">
+            <img src="./img/cards/8-tea.jpg" alt="tea" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">ჩაი</h4>
+              <p>ფასი: 1 ჭიქა — 5ლ.</p>
+              <p>რაოდენობა განისაზღვრება ჭიქით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 5, მაქს. 12 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+        <!-- //////wkali/////////// -->
+        <div class="card">
+          <img src="./img/cards/8-wkali.jpg" alt="wkali" />
+          <div class="card__front card__front-drinks card__front-wkali">
+            <img src="./img/cards/8-wkali.jpg" alt="wkali" />
+            <h4 class="heading-4 card__front__name">წყალი</h4>
+            <img
+              src="./img/output-onlinepngtools.png"
+              alt="click"
+              title="click"
+              class="card__click"
+            />
+          </div>
+          <div class="card__back card__back-drinks card__back-wkali">
+            <img src="./img/cards/8-wkali.jpg" alt="wkali" />
+            <div class="card__back-content">
+              <h4 class="heading-4 card__back__name">წყალი</h4>
+              <p>ფასი: 1 ბოთლი — 2ლ.</p>
+              <p>100 გრამი</p>
+              <p>რაოდენობა განისაზღვრება ბოთლით</p>
+              <p>დალოდება მოგიწევთ<br />მინ. 2, მაქს. 5 წუთი</p>
+              <button class="card-button">შეუკვეთე ახლავე</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="footer__above">
+        <img src="./img/main-logo.png" alt="logo" class="logo footer__logo" />
+        <p class="footer__name">LoveToServe</p>
+      </div>
+      <p class="footer__copy">
+        &copy; საიტი ეკუთვნის გიორგი გოგსაძეს, ნებადართვულია მისი გადაკეთება
+        მხოლოდ იმ შემთხვევაში, თუ მიუთითებთ საიტის დიზაინის ავტორს — გიორგი
+        გოგსაძეს.
+      </p>
+      <div class="footer__down">
+        <div class="footer__problem">
+          <p class="footer__problem__text">პრობლემის შეტყობინება</p>
+        </div>
+        <div class="react">
+          <div class="react__stars">
+            <input
+              type="radio"
+              name="star"
+              id="5star"
+              class="react__stars__input"
+            />
+            <label for="5star" class="react__stars__label">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 576 512"
+                class="react__stars__svg"
+              >
+                <title>5 star</title>
+                <path
+                  d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"
+                ></path>
+              </svg>
+
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 576 512"
+                class="react__stars__svg-full"
+              >
+                <title>5 star</title>
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                ></path>
+              </svg>
+            </label>
+            <input
+              type="radio"
+              name="star"
+              id="4star"
+              class="react__stars__input"
+            />
+            <label for="4star" class="react__stars__label">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 576 512"
+                class="react__stars__svg"
+              >
+                <title>4 star</title>
+                <path
+                  d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"
+                ></path>
+              </svg>
+
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 576 512"
+                class="react__stars__svg-full"
+              >
+                <title>4 star</title>
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                ></path>
+              </svg>
+            </label>
+            <input
+              type="radio"
+              name="star"
+              id="3star"
+              class="react__stars__input"
+            />
+            <label for="3star" class="react__stars__label">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 576 512"
+                class="react__stars__svg"
+              >
+                <title>3 star</title>
+                <path
+                  d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"
+                ></path>
+              </svg>
+
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 576 512"
+                class="react__stars__svg-full"
+              >
+                <title>3 star</title>
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                ></path>
+              </svg>
+            </label>
+            <input
+              type="radio"
+              name="star"
+              id="2star"
+              class="react__stars__input"
+            />
+            <label for="2star" class="react__stars__label">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 576 512"
+                class="react__stars__svg"
+              >
+                <title>2 star</title>
+                <path
+                  d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"
+                ></path>
+              </svg>
+
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 576 512"
+                class="react__stars__svg-full"
+              >
+                <title>2 star</title>
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                ></path>
+              </svg>
+            </label>
+            <input
+              type="radio"
+              name="star"
+              id="1star"
+              class="react__stars__input"
+            />
+            <label for="1star" class="react__stars__label">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 576 512"
+                class="react__stars__svg"
+              >
+                <title>1 star</title>
+                <path
+                  d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"
+                ></path>
+              </svg>
+
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 576 512"
+                class="react__stars__svg-full"
+              >
+                <title>1 star</title>
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                ></path>
+              </svg>
+            </label>
+          </div>
+          <p class="react__text">დაწერე შეფასება</p>
+        </div>
+        <div class="facebook">
+          <p class="facebook__text">დაგვიმეგობრდი ფეისბუქზე</p>
+          <a
+            href="https://www.facebook.com"
+            class="facebook__link"
+            target="_blank"
+          >
+            <svg viewBox="10 10 490 490" class="facebook__svg">
+              <title>facebook</title>
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- form-popup -->
+    <div class="container">
+      <div class="form-popup">
+        <svg viewBox="0 0 352 512" class="form-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <h4 class="heading-4 form-popup__header">პრობლემის შეტყობინება</h4>
+        <form action="" class="form-popup__form">
+          <div class="form-popup__about">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="სახელი"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ემაილი"
+              required
+            />
+          </div>
+          <div class="form-popup__problems">
+            <p class="form-popup__problem">პრობლემის ხარისხი:</p>
+            <div class="form-popup__select">
+              <div>
+                <input
+                  type="radio"
+                  name="dop"
+                  id="dop1"
+                  value="sagangasho"
+                  required
+                />
+                <label for="dop1"><span></span> საგანგაშო</label>
+              </div>
+              <div>
+                <input type="radio" name="dop" id="dop2" value="sayuradgebo" />
+                <label for="dop2"><span></span> საყურადღებო</label>
+              </div>
+              <div>
+                <input type="radio" name="dop" id="dop3" value="discomport" />
+                <label for="dop3"
+                  ><span></span> მცირე დისკომფორტის შემქმნელი</label
+                >
+              </div>
+            </div>
+          </div>
+          <label for="message" class="form-popup__fill"
+            >დაწერე პრობლემის შესახებ:</label
+          >
+          <div class="text-and-btn">
+            <textarea name="message" id="message" required></textarea>
+            <div class="form-button-cont">
+              <input type="submit" value="გაგზავნა" class="form-button" />
+              <div class="form-button__before"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- shawarma-popup -->
+    <div class="container-shawarma">
+      <div class="shawarma-popup">
+        <svg viewBox="0 0 352 512" class="shawarma-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="sh-types-container types-container">
+          <div class="types-container__after">აირჩიე რომელიმე</div>
+          <div class="sh-type-1">
+            <input
+              type="radio"
+              name="shawarma-types"
+              id="shawarma-type-1"
+              required
+            />
+            <label for="shawarma-type-1"
+              ><img
+                src="./img/opens/open shawarma/shawarma-1small.jpg"
+                alt="small"
+              />
+              <div class="types-container__btn">პატარა<br />7ლ.</div></label
+            >
+          </div>
+          <div class="sh-type-2">
+            <input
+              type="radio"
+              name="shawarma-types"
+              id="shawarma-type-2"
+              required
+            />
+            <label for="shawarma-type-2"
+              ><img
+                src="./img/opens/open shawarma/shawarma-2medium.jpg"
+                alt="medium"
+              />
+              <div class="types-container__btn">საშუალო<br />9ლ.</div></label
+            >
+          </div>
+          <div class="sh-type-3">
+            <input
+              type="radio"
+              name="shawarma-types"
+              id="shawarma-type-3"
+              required
+            />
+            <label for="shawarma-type-3"
+              ><img
+                src="./img/opens/open shawarma/shawarma-3large.jpg"
+                alt="large"
+              />
+              <div class="types-container__btn">დიდი<br />12ლ.</div></label
+            >
+          </div>
+        </div>
+        <button class="shawarma-ingr-open">
+          აირჩიე ინგრედიენტები
+          <svg viewBox="0 0 448 512">
+            <path
+              d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="container-shawarma-ingredients">
+      <div class="shawarma-ingredients-popup">
+        <svg viewBox="0 0 256 512" class="shawarma-ingredients-popup__back">
+          <path
+            d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+          ></path>
+        </svg>
+        <svg viewBox="0 0 352 512" class="shawarma-ingredients-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="shawarma-ingredients">
+          <div class="shawarma-ingredients__picture">
+            <img
+              src="./img/opens/open shawarma/shawarma.png"
+              alt="shawarma"
+              class="shawarma-ingredients__img-shawarma"
+            />
+            <img
+              src="./img/opens/open shawarma/shawarma-cucumber.png"
+              alt="cucumber"
+              class="shawarma-ingredients__img-cucumber"
+            />
+            <img
+              src="./img/opens/open shawarma/shawarma-ketchup.png"
+              alt="ketchup"
+              class="shawarma-ingredients__img-ketchup"
+            />
+            <img
+              src="./img/opens/open shawarma/shawarma-mustard.png"
+              alt="mustard"
+              class="shawarma-ingredients__img-mustard"
+            />
+            <img
+              src="./img/opens/open shawarma/shawarma-onion.png"
+              alt="onion"
+              class="shawarma-ingredients__img-onion"
+            />
+            <img
+              src="./img/opens/open shawarma/shawarma-pepper.png"
+              alt="pepper"
+              class="shawarma-ingredients__img-pepper"
+            />
+            <img
+              src="./img/opens/open shawarma/shawarma-salad.png"
+              alt="salad"
+              class="shawarma-ingredients__img-salad"
+            />
+            <img
+              src="./img/opens/open shawarma/shawarma-tomato.png"
+              alt="tomato"
+              class="shawarma-ingredients__img-tomato"
+            />
+          </div>
+          <div class="shawarma-ingredients__inputs">
+            <div>
+              <input
+                type="checkbox"
+                name="shawarma-ingredients-checkbox"
+                id="shw-chk-1"
+                checked
+              />
+              <label for="shw-chk-1"><span></span>წიწაკა</label><br />
+              <input
+                type="checkbox"
+                name="shawarma-ingredients-checkbox"
+                id="shw-chk-2"
+                checked
+              />
+              <label for="shw-chk-2"><span></span>კიტრი</label><br />
+              <input
+                type="checkbox"
+                name="shawarma-ingredients-checkbox"
+                id="shw-chk-3"
+                checked
+              />
+              <label for="shw-chk-3"><span></span>კეტჩუპი</label><br />
+              <input
+                type="checkbox"
+                name="shawarma-ingredients-checkbox"
+                id="shw-chk-4"
+                checked
+              />
+              <label for="shw-chk-4"><span></span>მდოგვი</label><br />
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="shawarma-ingredients-checkbox"
+                id="shw-chk-5"
+                checked
+              />
+              <label for="shw-chk-5"><span></span>ხახვი</label><br />
+              <input
+                type="checkbox"
+                name="shawarma-ingredients-checkbox"
+                id="shw-chk-6"
+                checked
+              />
+              <label for="shw-chk-6"><span></span>სალათის ფურცელი</label><br />
+              <input
+                type="checkbox"
+                name="shawarma-ingredients-checkbox"
+                id="shw-chk-7"
+                checked
+              />
+              <label for="shw-chk-7"><span></span>პამიდორი</label><br />
+            </div>
+          </div>
+        </div>
+        <button class="close-should-shawarma">შეუკვეთე ახლავე</button>
+      </div>
+    </div>
+    <!-- hamburger-popup -->
+    <div class="container-hamburger">
+      <div class="hamburger-popup">
+        <svg viewBox="0 0 352 512" class="hamburger-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="hamburger-ingredients">
+          <div class="hamburger-ingredients__picture">
+            <img
+              src="./img/opens/open burger/burger-full-without-bgi.png"
+              alt="full-hamburger"
+              class="hamburger-ingredients__img-full"
+            />
+            <img
+              src="./img/opens/open burger/burger-3-in-1.png"
+              alt="bone-hamburger"
+              class="hamburger-ingredients__img-bone"
+            />
+            <img
+              src="./img/opens/open burger/burger-salad-1.png"
+              alt="salad-1"
+              class="hamburger-ingredients__img-salad-1"
+            />
+            <img
+              src="./img/opens/open burger/burger-tomato.png"
+              alt="tomato"
+              class="hamburger-ingredients__img-tomato"
+            />
+            <img
+              src="./img/opens/open burger/burger-cheese.png"
+              alt="cheese"
+              class="hamburger-ingredients__img-cheese"
+            />
+            <img
+              src="./img/opens/open burger/burger-ketchup.png"
+              alt="ketchup"
+              class="hamburger-ingredients__img-ketchup"
+            />
+            <img
+              src="./img/opens/open burger/burger-onion.png"
+              alt="onion"
+              class="hamburger-ingredients__img-onion"
+            />
+            <img
+              src="./img/opens/open burger/burger-cucumber.png"
+              alt="cucumber"
+              class="hamburger-ingredients__img-cucumber"
+            />
+            <img
+              src="./img/opens/open burger/burger-salad-2.png"
+              alt="salad-2"
+              class="hamburger-ingredients__img-salad-2"
+            />
+          </div>
+          <div class="hamburger-ingredients__inputs">
+            <div>
+              <input
+                type="checkbox"
+                name="hamburger-ingredients-checkbox"
+                id="ham-chk-1"
+                checked
+              />
+              <label for="ham-chk-1"><span></span>სალათის ფურცელი</label><br />
+              <input
+                type="checkbox"
+                name="hamburger-ingredients-checkbox"
+                id="ham-chk-2"
+                checked
+              />
+              <label for="ham-chk-2"><span></span>პამიდორი</label><br />
+              <input
+                type="checkbox"
+                name="hamburger-ingredients-checkbox"
+                id="ham-chk-3"
+                checked
+              />
+              <label for="ham-chk-3"><span></span>ყველი</label><br />
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="hamburger-ingredients-checkbox"
+                id="ham-chk-4"
+                checked
+              />
+              <label for="ham-chk-4"><span></span>კეტჩუპი</label><br />
+              <input
+                type="checkbox"
+                name="hamburger-ingredients-checkbox"
+                id="ham-chk-5"
+                checked
+              />
+              <label for="ham-chk-5"><span></span>ხახვი</label><br />
+              <input
+                type="checkbox"
+                name="hamburger-ingredients-checkbox"
+                id="ham-chk-6"
+                checked
+              />
+              <label for="ham-chk-6"><span></span>მჟავე კიტრი</label><br />
+            </div>
+          </div>
+        </div>
+        <button class="close-should-hamburger">შეუკვეთე ახლავე</button>
+      </div>
+    </div>
+    <!-- khachapuri-popup -->
+    <div class="container-khachapuri">
+      <div class="khachapuri-popup">
+        <svg viewBox="0 0 352 512" class="khachapuri-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="kh-types-container types-container">
+          <div class="types-container__after">აირჩიე რომელიმე</div>
+          <div class="kh-type-1">
+            <input
+              type="radio"
+              name="khachapuri-types"
+              id="khachapuri-type-1"
+              required
+            />
+            <label for="khachapuri-type-1"
+              ><img
+                src="./img/opens/open khachapuri/khachapuri-acharuli.jpg"
+                alt="khachapuri-acharuli"
+              />
+              <div class="types-container__btn">
+                აჭარული ხაჭაპური<br />18ლ.
+              </div></label
+            >
+          </div>
+          <div class="kh-type-2">
+            <input
+              type="radio"
+              name="khachapuri-types"
+              id="khachapuri-type-2"
+            />
+            <label for="khachapuri-type-2"
+              ><img
+                src="./img/opens/open khachapuri/khachapuri-imeruli.jpg"
+                alt="khachapuri-imeruli"
+              />
+              <div class="types-container__btn">
+                იმერული ხაჭაპური<br />12ლ.
+              </div></label
+            >
+          </div>
+          <div class="kh-type-3">
+            <input
+              type="radio"
+              name="khachapuri-types"
+              id="khachapuri-type-3"
+            />
+            <label for="khachapuri-type-3"
+              ><img
+                src="./img/opens/open khachapuri/khachapuri-fenovani.jpg"
+                alt="fenovani-acharuli"
+              />
+              <div class="types-container__btn">
+                ფენოვანი ხაჭაპური<br />10ლ.
+              </div></label
+            >
+          </div>
+        </div>
+        <button class="close-should-khachapuri">შეუკვეთე ახლავე</button>
+      </div>
+    </div>
+    <!-- pizza-popup -->
+    <div class="container-pizza">
+      <div class="pizza-popup">
+        <svg viewBox="0 0 352 512" class="pizza-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="pi-types-container types-container">
+          <div class="types-container__after">აირჩიე რომელიმე</div>
+          <div class="pi-type-1">
+            <input type="radio" name="pizza-types" id="pizza-type-1" required />
+            <label for="pizza-type-1"
+              ><img
+                src="./img/opens/open pizza/pizza-cheese.jpg"
+                alt="pizza-cheese"
+              />
+              <div class="types-container__btn">
+                ყველის პიცა<br />15ლ.
+              </div></label
+            >
+          </div>
+          <div class="pi-type-2">
+            <input type="radio" name="pizza-types" id="pizza-type-2" />
+            <label for="pizza-type-2"
+              ><img
+                src="./img/opens/open pizza/pizza-margarita.jpg"
+                alt="pizza-margarita"
+              />
+              <div class="types-container__btn">მარგარიტა<br />15ლ.</div></label
+            >
+          </div>
+          <div class="pi-type-3">
+            <input type="radio" name="pizza-types" id="pizza-type-3" />
+            <label for="pizza-type-3"
+              ><img
+                src="./img/opens/open pizza/pizza-sicilian.jpg"
+                alt="pizza-sicilian"
+              />
+              <div class="types-container__btn">
+                სიცილიური პიცა<br />10ლ.
+              </div></label
+            >
+          </div>
+        </div>
+        <button class="close-should-pizza">შეუკვეთე ახლავე</button>
+      </div>
+    </div>
+    <!-- donut-popup -->
+    <div class="container-donut">
+      <div class="donut-popup">
+        <svg viewBox="0 0 352 512" class="donut-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="do-types-container types-container">
+          <div class="types-container__after">აირჩიე რომელიმე</div>
+          <div class="do-type-1">
+            <input type="radio" name="donut-types" id="donut-type-1" required />
+            <label for="donut-type-1"
+              ><img
+                src="./img/opens/open donats/birthday-donut.jpg"
+                alt="birthday-donut"
+              />
+              <div class="types-container__btn">
+                დაბადების დღის დონატი<br />14ლ.
+              </div></label
+            >
+          </div>
+          <div class="do-type-2">
+            <input type="radio" name="donut-types" id="donut-type-2" />
+            <label for="donut-type-2"
+              ><img
+                src="./img/opens/open donats/chocolate-donuts.jpg"
+                alt="chocolate-donut"
+              />
+              <div class="types-container__btn">
+                შოკოლადის დონატი<br />18ლ.
+              </div></label
+            >
+          </div>
+          <div class="do-type-3">
+            <input type="radio" name="donut-types" id="donut-type-3" />
+            <label for="donut-type-3"
+              ><img
+                src="./img/opens/open donats/donut-strawberry.jpg"
+                alt="donut-strawberry"
+              />
+              <div class="types-container__btn">
+                მარწყვის დონატი<br />14ლ.
+              </div></label
+            >
+          </div>
+        </div>
+        <button class="close-should-donut">შეუკვეთე ახლავე</button>
+      </div>
+    </div>
+    <!-- ice-cream-popup -->
+    <div class="container-ice-cream">
+      <div class="ice-cream-popup">
+        <svg viewBox="0 0 352 512" class="ice-cream-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="ic-types-container types-container">
+          <div class="types-container__after">აირჩიე რომელიმე</div>
+          <div class="ic-type-1">
+            <input
+              type="radio"
+              name="ice-cream-types"
+              id="ice-cream-type-1"
+              required
+            />
+            <label for="ice-cream-type-1"
+              ><img
+                src="./img/opens/open ice cream/chocolate-ice.jpg"
+                alt="chocolate-ice-cream"
+              />
+              <div class="types-container__btn">
+                შოკოლადის ნაყინი<br />4ლ.
+              </div></label
+            >
+          </div>
+          <div class="ic-type-2">
+            <input
+              type="radio"
+              name="ice-cream-types"
+              id="ice-cream-type-2"
+              required
+            />
+            <label for="ice-cream-type-2"
+              ><img
+                src="./img/opens/open ice cream/vanilla.jpg"
+                alt="vanilla-ice-cream"
+              />
+              <div class="types-container__btn">
+                ვანილის ნაყინი<br />4ლ.
+              </div></label
+            >
+          </div>
+          <div class="ic-type-3">
+            <input
+              type="radio"
+              name="ice-cream-types"
+              id="ice-cream-type-3"
+              required
+            />
+            <label for="ice-cream-type-3"
+              ><img
+                src="./img/opens/open ice cream/ice-cream-strawberry.jpg"
+                alt="ice-cream-strawberry"
+              />
+              <div class="types-container__btn">
+                მარწყვის ნაყინი<br />5ლ.
+              </div></label
+            >
+          </div>
+          <!-- <div class="ic-type-4">
+            <input
+              type="radio"
+              name="ice-cream-types"
+              id="ice-cream-type-4"
+              required
+            />
+            <label for="ice-cream-type-4"
+              ><img
+                src="./img/opens/open ice cream/mixed-ice.jpg"
+                alt="ice-cream-mixed"
+              />
+              <div class="types-container__btn">შერეული<br />6ლ.</div></label
+            >
+          </div> -->
+        </div>
+        <button class="close-should-ice-cream">შეუკვეთე ახლავე</button>
+      </div>
+    </div>
+    <!-- milkshake-popup -->
+    <div class="container-milkshake">
+      <div class="milkshake-popup">
+        <svg viewBox="0 0 352 512" class="milkshake-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="mi-types-container types-container">
+          <div class="types-container__after">აირჩიე რომელიმე</div>
+          <div class="mi-type-1">
+            <input
+              type="radio"
+              name="milkshake-types"
+              id="milkshake-type-1"
+              required
+            />
+            <label for="milkshake-type-1"
+              ><img
+                src="./img/opens/open milkshake/milkshake-banana.jpg"
+                alt="milkshake-banana"
+              />
+              <div class="types-container__btn">
+                ბანანის მილქშეიქი<br />6ლ.
+              </div></label
+            >
+          </div>
+          <div class="mi-type-2">
+            <input
+              type="radio"
+              name="milkshake-types"
+              id="milkshake-type-2"
+              required
+            />
+            <label for="milkshake-type-2"
+              ><img
+                src="./img/opens/open milkshake/milkshake-chocolate.jpg"
+                alt="milkshake-chocolate"
+              />
+              <div class="types-container__btn">
+                შოკოლადის მილქშეიქი<br />6ლ.
+              </div></label
+            >
+          </div>
+          <div class="mi-type-3">
+            <input
+              type="radio"
+              name="milkshake-types"
+              id="milkshake-type-3"
+              required
+            />
+            <label for="milkshake-type-3"
+              ><img
+                src="./img/opens/open milkshake/milkshake-strawberry.jpg"
+                alt="milkshake-strawberry"
+              />
+              <div class="types-container__btn">
+                მარწყვის მილქშეიქი<br />6ლ.
+              </div></label
+            >
+          </div>
+        </div>
+        <button class="close-should-milkshake">შეუკვეთე ახლავე</button>
+      </div>
+    </div>
+    <!-- coffee-popup -->
+    <div class="container-coffee">
+      <div class="coffee-popup">
+        <svg viewBox="0 0 352 512" class="coffee-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="co-types-container types-container">
+          <div class="types-container__after">აირჩიე რომელიმე</div>
+          <div class="co-type-1">
+            <input
+              type="radio"
+              name="coffee-types"
+              id="coffee-type-1"
+              required
+            />
+            <label for="coffee-type-1"
+              ><img
+                src="./img/opens/open coffee/americano.jpg"
+                alt="americano"
+              />
+              <div class="types-container__btn">ამერიკანო<br />6ლ.</div></label
+            >
+          </div>
+          <div class="co-type-2">
+            <input
+              type="radio"
+              name="coffee-types"
+              id="coffee-type-2"
+              required
+            />
+            <label for="coffee-type-2"
+              ><img src="./img/opens/open coffee/espresso.jpg" alt="espresso" />
+              <div class="types-container__btn">ესპრესო<br />6ლ.</div></label
+            >
+          </div>
+          <div class="co-type-3">
+            <input
+              type="radio"
+              name="coffee-types"
+              id="coffee-type-3"
+              required
+            />
+            <label for="coffee-type-3"
+              ><img src="./img/opens/open coffee/turkish.jpg" alt="turkish" />
+              <div class="types-container__btn">თურქული<br />5ლ.</div></label
+            >
+          </div>
+        </div>
+        <button class="close-should-coffee">შეუკვეთე ახლავე</button>
+      </div>
+    </div>
+    <!-- order-popup -->
+    <div class="container-order">
+      <div class="order-popup">
+        <svg viewBox="0 0 352 512" class="order-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <div class="order__questions">
+          <div class="number-plate">
+            <label for="Pnumber">რაოდენობა:</label>
+            <input type="number" name="Pnumber" id="Pnumber" min="1" required />
+          </div>
+          <div class="table-number">
+            <label for="tableN">მაგიდის ნომერი:</label>
+            <input
+              type="number"
+              name="tableN"
+              id="tableN"
+              min="1"
+              max="60"
+              required
+            />
+          </div>
+          <button class="end-button"><span>შეკვეთა</span></button>
+        </div>
+      </div>
+    </div>
+    <!-- thanks-popup -->
+    <div class="container-thanks">
+      <div class="thanks-popup">
+        <svg viewBox="0 0 352 512" class="thanks-popup__close">
+          <title>close</title>
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          ></path>
+        </svg>
+        <h4 class="heading-4 thanks-popup__text">
+          შეკვეთა მიღებულია <br />
+          მადლობა, რომ სარგებლობთ <span>LoveToServe</span>-ის საიტით
+        </h4>
+      </div>
+    </div>
+  </body>
+</html>
